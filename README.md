@@ -29,37 +29,28 @@
 <pre>
 1). Добавление категории:
 POST http://localhost/api/v1/categories
-Accept: */*
-Cache-Control: no-cache
 Content-Type: application/json
 
-{ "name" : "category1"}
+{ "name" : "Категория 1"}
 
 2). Добавление товара:
 POST http://localhost/api/v1/goods
-Accept: */*
-Cache-Control: no-cache
 Content-Type: application/json
 
 { "name" : "Товар 1 Категории 1", "cost" : 1,  "quantity" : 1,  "categoryIds" : [1]}
 
 3). Просмотр списка товаров и их категорий:
 GET http://localhost/api/v1/goods?expand=categories
-Accept: */*
-Cache-Control: no-cache
 
 4). Редактирование товара:
 PATCH http://localhost/api/v1/goods/1
-Accept: */*
-Cache-Control: no-cache
 Content-Type: application/json
 
 { "cost" : 1.59 }
 
 5). Удаление товара:
 DELETE http://localhost/api/v1/goods/1
-Accept: */*
-Cache-Control: no-cache
+
 </pre>
 
 <h2>Комментарии</h2>
